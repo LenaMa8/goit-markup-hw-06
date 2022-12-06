@@ -473,6 +473,65 @@
             <use href="./images/portfolio-images/icons.svg/symbol-defs.svg#icon-close" />
           </svg>
         </div>
+
+        
+        <p class="modal-text">Leave your information and we'll call you back</p>
+        <form action="">
+          <label for="name" class="modal-form-item">
+            <span>Name</span>
+            <input type="name" name="name" id="name" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/portfolio-images/icons.svg/#icon-person-black" />
+            </svg>
+          </label>
+          <label for="telephone" class="modal-form-item">
+            <span>Telephone</span>
+            <input
+              type="telephone" name="telephone" id="telephone" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/portfolio-images/icons.svg/#icon-phone-black" />
+            </svg>
+          </label>
+          <label for="e-mail" class="modal-form-item">
+            <span>E-mail</span>
+            <input
+              type="e-mail" name="e-mail" id="e-mail" class="modal-input"
+            />
+            <svg class="modal-input-icon">
+              <use href="./images/portfolio-images/icons.svg/#icon-email-black" />
+            </svg>
+          </label>
+          <label for="e-mail" class="modal-form-item">
+            <span>Comments</span>
+            <textarea
+              type="comments"
+              name="comments"
+              id="comments"
+              placeholder="Enter the text"
+              class="modal-input modal-textarea"
+            ></textarea>
+          </label>
+          <label for="checkbox" class="modal-form-item modal-checkbox-label">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="checkbox-appearance modal-checkbox-margin"
+            />
+            <svg class="modal-checkbox-icon">
+              <use href="./images/portfolio-images/icons.svg/#icon-checkmark" />
+            </svg>
+            <span class="modal-checkbox-margin">
+              I agree with the newsletter and accept the
+              <a href="#" class="terms-and-conditions-link link"
+                >Terms and Conditions</a
+              ></span
+            >
+          </label>
+          <div style="display: flex; justify-content: center">
+            <button type="submit" class="modal-submit-button">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/modal.js"></script>

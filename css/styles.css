@@ -688,3 +688,99 @@ height: 50px;
   height: 24px;
   width: 24px;
 }
+/*FORM*/
+.modal-form-item {
+  margin-top: 10px;
+  position: relative;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  font: 400 12px/14px Roboto;
+  color: var(--secondary-text-color);
+}
+.modal-input-icon {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+  fill: var(--primary-title-color);
+}
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
+}
+.modal-input {
+  color: var(--secondary-text-color);
+  margin: 4px 40px 4px 0px;
+  padding: 12px;
+  padding-left: 42px;
+  background: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-input:focus {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: #757575;
+  outline: none;
+}
+.modal-input:focus::placeholder {
+  color: #757575;
+  opacity: 0.8;
+}
+.modal-text {
+  font: 700 20px/24px Roboto;
+  margin: 40px 40px 12px 40px;
+}
+.modal-checkbox-label {
+  margin: 25px 52px 10px 52px;
+  flex-direction: row;
+  align-items: flex-start;
+  font: 400 14px/24px Roboto;
+}
+.checkbox-appearance {
+  margin-top: 4px;
+  padding: 0;
+  width: 16px;
+  height: 15px;
+  appearance: none;
+  border: 2px solid var(--primary-title-color);
+  border-radius: 2px;
+}
+.modal-checkbox-margin {
+  margin-right: 8px;
+}
+.modal-checkbox-icon {
+  height: 15px;
+  width: 15px;
+  border-radius: 2px;
+  display: none;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-color: var(--accent-color);
+}
+input[type="checkbox"]:checked + .modal-checkbox-icon {
+  display: inline-block;
+}
+.terms-and-conditions-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline var(--accent-color);
+}
+.modal-submit-button {
+  margin-bottom: 40px;
+  background-color: var(--accent-color);
+  border: 4px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 6px 76px;
+  color: var(--secondary-title-color);
+  font: 700 16px/30px Roboto;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.modal-submit-button:hover {
+  border: 4px solid var(--accent-color);
+  background-color: var(--background-grey);
+  color: var(--primary-text-color);
+}
